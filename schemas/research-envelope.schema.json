@@ -1,0 +1,18 @@
+{
+ "$schema":"https://json-schema.org/draft/2020-12/schema",
+ "title":"SCANDOC research geometry envelope",
+ "type":"object",
+ "required":["schema_version","producer","source_modality","geometry_frame","evidence_status","native_authority","result"],
+ "properties":{
+ "schema_version":{"const":"scandoc-research-adapter/0.1"},
+ "producer":{"const":"platonic-trajectory-lab"},
+ "source_modality":{"const":"synthetic"},
+ "geometry_frame":{"const":"unit-radius-origin-centred"},
+ "geometry_hash":{"type":"null"},
+ "temporal_receipt":{"type":"null"},
+ "evidence_status":{"const":"UNVERIFIED"},
+ "native_authority":{"const":false},
+ "result":{"type":"object","required":["fixture","metric_edge_preservation","topology_preservation","physical_invariance","native_gate","sphere_writes","points"]}
+ },
+ "additionalProperties":false
+}
